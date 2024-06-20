@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product__img {
+    width: 100%;
+}
+
+.sec-01__txt-area {
+    height: 200px;
+}
