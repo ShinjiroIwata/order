@@ -29,9 +29,9 @@
                         <x-nav-link :href="route('user.order')" :active="request()->routeIs('user.order')">
                             発注履歴
                         </x-nav-link>
-                        <x-nav-link :href="route('user.contact')" :active="request()->routeIs('user.contact')">
+                        {{-- <x-nav-link :href="route('user.contact')" :active="request()->routeIs('user.contact')">
                             お問い合わせ
-                        </x-nav-link>
+                        </x-nav-link> --}}
                     @endif
                 </div>
             </div>
