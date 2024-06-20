@@ -57,5 +57,12 @@ class UserDashboardController extends Controller
                 ]
             );
         }
+
+        return to_route('user.thanks');
+    }
+
+    public function thanks()
+    {
+        return view('user.thanks');
     }
 }

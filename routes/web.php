@@ -42,6 +42,7 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/order', [UserDashboardController::class, 'order'])->name('user.order');
     Route::get('/user/order_create', [UserDashboardController::class, 'order_create'])->name('user.order_create');
     Route::post('/user/order_create', [UserDashboardController::class, 'order_store'])->name('user.order_store');
+    Route::get('/user/thanks', [UserDashboardController::class, 'thanks'])->name('user.thanks');
     Route::get('/user/select', [UserDashboardController::class, 'select'])->name('user.select');
     Route::get('/user/contact', [UserDashboardController::class, 'contact'])->name('user.contact');
     Route::post('/user/contact_store', [UserDashboardController::class, 'contact_store'])->name('user.contact_store');
