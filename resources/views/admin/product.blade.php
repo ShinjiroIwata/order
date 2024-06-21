@@ -24,10 +24,10 @@
                                     価格</th>
                                 <th
                                     class="px-4 py-4 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                                    価格</th>
+                                    編集</th>
                                 <th
                                     class="px-4 py-4 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                                    価格</th>
+                                    削除</th>
                             </tr>
                         </thead>
                         <tbody>
