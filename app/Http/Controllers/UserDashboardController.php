@@ -41,6 +41,10 @@ class UserDashboardController extends Controller
     }
     public function order_store(Request $request)
     {
+
+        $request->validate([
+            'order_date' => 'required|date|after:today',
+        ]);
         $user_id = Auth::user()->id;
         $order_date = $request->order_date;
         $orders = $request->order_num;

@@ -35,6 +35,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/product', [AdminDashboardController::class, 'product'])->name('admin.product');
     Route::get('/admin/product/create', [AdminDashboardController::class, 'product_create'])->name('admin.product.create');
     Route::post('/admin/product/store', [AdminDashboardController::class, 'product_store'])->name('admin.product.store');
+    Route::post('/admin/product/delete', [AdminDashboardController::class, 'product_delete'])->name('admin.product.delete');
+    Route::get('/admin/product/edit/{id}', [AdminDashboardController::class, 'product_edit'])->name('admin.product.edit');
+    Route::put('/admin/product/edit/', [AdminDashboardController::class, 'product_update'])->name('admin.product.update');
     Route::get('/admin/contact', [AdminDashboardController::class, 'contact'])->name('admin.contact');
 });
 

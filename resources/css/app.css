@@ -4,8 +4,27 @@
 
 .product__img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .sec-01__txt-area {
-    height: 200px;
+    height: 210px;
+}
+
+
+.sec-02__table td,
+.sec-02__table th {
+    height: 150px;
+}
+
+.sec-03__img {
+    width: 100px;
+    max-width: 100%;
+    display: block;
+}
+
+.text-danger {
+    color: red;
 }

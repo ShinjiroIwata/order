@@ -65,10 +65,14 @@
                 <form action="{{ route('user.order_store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="relative mb-4">
-                        <label for="product_name" class=" leading-7 text-sm text-gray-600">日付</label>
-                        <input type="date" id="product_name" name="order_date" required
-                            class=" datepicker bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <label for="order_date" class=" leading-7 text-sm text-gray-600">日付</label>
+                        <input type="date" id="order_date" name="order_date" required
+                            class="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
+
+                    @if ($errors->has('order_date'))
+                        <span class="text-danger">{{ $errors->first('order_date') }}</span>
+                    @endif
                     @foreach ($products as $product)
                         <div class="sec-01__block">
                             <div class="sec-01__item sec-01__item-01">
@@ -102,4 +106,20 @@
 
             </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const dateInput = document.getElementById('order_date');
+                const today = new Date();
+                const tomorrow = new Date(today);
+                tomorrow.setDate(today.getDate() + 1);
+
+                const year = tomorrow.getFullYear();
+                const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+                const day = String(tomorrow.getDate()).padStart(2, '0');
+
+                const minDate = `${year}-${month}-${day}`;
+                dateInput.setAttribute('min', minDate);
+            });
+        </script>
 </x-app-layout>
