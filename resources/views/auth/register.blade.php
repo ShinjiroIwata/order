@@ -16,7 +16,7 @@
 
                         <!-- Name -->
                         <div>
-                            <x-input-label for="name" :value="名前" />
+                            <label for="name">名前</label>
                             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name"
                                 :value="old('name')" required autofocus autocomplete="name" />
                             <x-input-error :messages="$errors->get('name')" class="mt-2" />
@@ -24,7 +24,7 @@
 
                         <!-- Email Address -->
                         <div class="mt-4">
-                            <x-input-label for="email" :value="メールアドレス" />
+                            <label for="email">メールアドレス</label>
                             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email"
                                 :value="old('email')" required autocomplete="username" />
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
@@ -32,7 +32,7 @@
 
                         <!-- Password -->
                         <div class="mt-4">
-                            <x-input-label for="password" :value="パスワード" />
+                            <label for="password">パスワード</label>
 
                             <x-text-input id="password" class="block mt-1 w-full" type="password" name="password"
                                 required autocomplete="new-password" />
@@ -42,7 +42,8 @@
 
                         <!-- Confirm Password -->
                         <div class="mt-4">
-                            <x-input-label for="password_confirmation" :value="パスワード確認" />
+                            <label for="password_confirmation">パスワード確認</label>
+
 
                             <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password"
                                 name="password_confirmation" required autocomplete="new-password" />
