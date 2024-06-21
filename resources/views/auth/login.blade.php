@@ -2,7 +2,7 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <div>ポートフォリ用ログイン情報</div>
+    <div>ポートフォリオ用ログイン情報</div>
     <br>
     <div>管理者</div>
     <div>ID: admin@test.test</div>
