@@ -126,5 +126,6 @@ return [
         'product_price' => '価格',
         'product_img' => '商品画像',
         'order_date' => '日付',
+        'message' => 'お問い合わせ内容',
     ],
 ];
