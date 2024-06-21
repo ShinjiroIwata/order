@@ -8,7 +8,7 @@
     <div>ID: admin@test.test</div>
     <div>Pass: testtest</div>
     <br>
-    <div>管理者</div>
+    <div>一般ユーザー</div>
     <div>ID: user@test.test</div>
     <div>Pass: testtest</div>
     <br>
