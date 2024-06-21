@@ -38,7 +38,7 @@
                                             alt="{{ $product->name }}">
                                     </td>
                                     <td class="px-4 py-4">{{ $product->name }}</td>
-                                    <td class="px-4 py-4">{{ $product->price }}</td>
+                                    <td class="px-4 py-4">{{ number_format($product->price) }}</td>
                                     <td class="px-4 py-4">
                                         <a href="{{ route('admin.product.edit', $product->id) }}"
                                             class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">編集</a>

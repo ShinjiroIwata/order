@@ -84,7 +84,7 @@
                                     {{ $product->name }}
                                 </div>
                                 <div class="sec-01__item-body-cost">
-                                    {{ $product->price }}円
+                                    {{ number_format($product->price) }}円
                                 </div>
                             </div>
                             <div class="sec-01__item sec-01__item-03">

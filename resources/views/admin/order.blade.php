@@ -37,6 +37,7 @@
                         <tbody>
                             @foreach ($groupedOrders as $groupedOrder)
                                 <tr>
+
                                     <td class="px-4 py-4">{{ $groupedOrder['user_name'] }}</td>
                                     @foreach ($products as $product)
                                         @foreach ($groupedOrder['orders'] as $order)
